@@ -1,0 +1,286 @@
+<html lang="en">
+  {% extends 'index.html' %}
+  {% load static %}
+  
+  {% block css %} <link rel="stylesheet" href="{% static 'css/aboutus.css' %}"> {% endblock %}
+  {% comment %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="https://fonts.google.com/">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>About</title>
+  </head>
+  <body>
+    {% endcomment %}
+    {% block content %}
+    {% comment %}
+    <!--  <div class="menu-bar">
+      <h1 class="logo">Ges<span>Trade</span></h1>
+      <ul class="nav-detail">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Programs <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Rapid</a></li>
+                  <li><a href="#">Accelerated</a></li>
+                  <li>
+                    <a href="#">Evaluation <i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="#">Basic</a></li>
+                        <li><a href="#">Intermediate</a></li>
+                        <li><a href="#">Advanced</a></li>
+                        <li><a href="#">Professional</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+        </li>
+        
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="hero">
+     
+    </div>-->
+    <nav class="navbar navbar-dark   fixed-top">
+    
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" id="logo" href="{% url 'aplikacioni' %}">Ges<span class="trade">Trade.com</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'aplikacioni' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'aboutus' %}">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Programs
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Accelerated</a></li>
+                    <li><a class="dropdown-item" href="#">Rapid</a></li>
+                    <li><a class="dropdown-item" href="#">Evaluation</a></li>
+                    <li>
+                  
+                    </li>
+                    
+                  </ul>
+                </li>
+              </ul><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+      </nav>{% endcomment %}
+<br><br><br>
+
+<h1 id="Head">About us</h1>
+<br><br><br>
+        <!--Card Info-->
+        <div class="row" id="row">
+          <div class="col-md-3">
+            <img src="{% static 'images/trade.jpg'' %}">
+          </div>
+            <div class="col-md-9">
+              <h1 id="Head">Funded Rapid Account</h1>
+              
+              <h4 id="Head">Our Rapid account allows our traders to earn bonuses from day one while working with our FOREX and CFD’s trading prop firm and the risk management aspects that come with it</h4>
+               
+               <ol > <h5 id="Head">Rapid Rules</h5>
+      
+               <li id="Head">5% Daily Drawdown
+                <ul>You must not have a 5% drawdown based on your balance or equity on your account within a 24 hour period starting 00:00 server time.</ul>
+               </li>
+               <li id="Head">12% Overall Drawdown
+                <ul>Your account must not go down by 12% (realized/unrealized) to balance or equity.</ul>
+               </li>
+               <li id="Head">Being Consistent
+                <ul>Your account must have approximately the same amount of trades every day</ul>
+               </li>
+               <li id="Head">3 Days / Week
+                <ul>A trader must enter one trade for at least 3 days a week. We call it 3 trading days a week rule.</ul>
+               </li>
+               <li id="Head">No Restrictions
+                <ul>You can trade any instrument available, any lot size you wish at any time.</ul>
+               </li>
+               <li id="Head">Payout increases!
+                <ul>Your payout increases over time as you grow with our company going from simulated to live account!</ul>
+               </li>           
+              </ol>
+            </div>
+        </div>
+
+        <div class="row" id="row">
+          <div class="col-md-9">
+            <h1 id="Head">Funded Account Evaluation</h1>
+            
+            <h4>Our Forex Funded Account Evaluation program is built for FOREX traders to prove their skills. Semi-professional traders in need of capital to move to the next level of their career, have the opportunity to show their talent 
+              and reach their goals in a quick, two phase process and join our FOREX Prop Firm and become a funded trader.</h4>
+             
+             <ol> <h5>Evaluation Rules</h5>
+        
+             <li id="Head">5% Daily Drawdown</li> 
+              <ul>You must not have a 5% drawdown based on your balance or equity on your account within a 24 hour period starting 00:00 server time.</ul>
+             
+             <li id="Head">12% Overall Drawdown</li> 
+              <ul>Your account must not go down by 12% (realized/unrealized) to balance or equity.</ul>
+             
+             <li id="Head">8% profit target phase 1</li> 
+              <ul>You need to reach the profit target of 8% without breaching any of the other rules within a 30-calendar day period. Your time starts when you open your first trade on your FOREX trading account.</ul>
+                 
+             <li id="Head">5% profit target phase 2</li>
+              <ul>If you successfully complete phase 1, you will need to start on phase 2, where you are required to reach a profit target of 5% without a breach of any of the other rules within a 60 calendar day period. Your time starts when you open your first trade on your FOREX trading account</ul></li>
+             <li id="Head">5 trading day minimum</li>
+              <ul>You must trade a minimum of 5 trading days to pass the Prop Firm evaluation. This shows us your ability to be patient and your FOREX trading habits, enabling us to profile your style and skills.</ul>
+        
+               
+             <li id="Head">No trading restrictions </li> 
+              <ul>Trade your FOREX Prop firm account your way, your size, your time. We do not limit the way you can trade. We do recommend that you maintain consistency and focus on risk management as it is important for long term success. Be aware of all rules before starting.</ul>
+        
+                         
+             </ol>
+            </div>
+          
+          <div class="col-md-3">
+            <img src="{% static 'images/trade.jpg'' %}">
+          </div>
+        </div>
+
+        
+  <div class="row" id="row">
+    <div class="col-md-3">
+      <img src="{% static 'images/trade.jpg'' %}">
+    </div>
+      <div class="col-md-9">
+        <h1 id="Head">Funded Accelerated Account</h1>
+        
+        <h4 id="Head">The My Forex Funds Accelerated program is built for our traders to start trading a live account from day one. This program is suitable for profitable full-time traders who want to boost their capital immediately.</h4>
+         
+         <ol> <h5>Accelerated Rules</h5>
+
+         <li id="Head">5% or 10% Overall drawdown
+          <ul>There are no daily drawdown limits.
+
+            Overall drawdown is set to 5% for Conventional accounts and 10% for Emphatic.</ul>
+         </li>
+         <li id="Head" >Up to 1:100 Leverage
+          <ul>Your leverage will be set to 1:100 leverage on Emphatic and 1:50 leverage on Conventional for FOREX and Metals like gold.</ul>
+         </li>
+         <li id="Head">Scaling at every 20%*
+          <ul>Your account will scale by 2x or 1.5 x (depending on which phase you are on). You are eligible to scale once every pay period.</ul>
+         </li>
+         <li id="Head">$2 Million USD Cap
+          <ul>Our largest accounts can scale all the way to $2 Million USD</ul>
+         </li>
+         <li id="Head">No Shares Allowed
+          <ul>Due to the nature of these accounts, we cannot allow trading in shares in our Accelerated program. You may however trade all your other favorite products like FOREX, CFD’s, Crypto and Metals.</ul>
+         </li>
+         <li id="Head">Weekly Payouts
+          <ul>Get your profit split every week. You can receive your first payment within a week, however your account must be of 5 days of age in order to be eligible for a payout. All payouts must be requested by 3pm EST or they will move to the next pay period.</ul>
+         </li>           
+         </ol>
+      </div>
+  </div>
+</div>
+
+
+
+{% comment %}
+<!--Footer-->
+<div class="container-fluid text-white p-3" style="font-family: 'Poppins', sans-serif;background: black;
+background: linear-gradient(to right, #1C426F ,#1C426F, #1C426F);">
+<div class="mt-3">
+  <h3 class="footer-head ">Want to partner with us?</h3>
+  <p class="footer-head">Our Prop Firm has multiple programs to start your journey as a Forex Funded Trader. Choose one of our funding programs and start trading, earn bonuses and profit-splits.</p>
+<center><a href="{% url 'aboutus' %}"><button  class="btn btn-block btn-outline-light"> Get Started</button></button></a>
+ </center>
+<hr>
+
+    </div>
+<div class="row justify-content-around">
+
+  <div class="col-md-3 col-sm-6">
+    <br> <br>
+    <a href="{% url 'aplikacioni' %}" id="logo"><h2>Ges<span class="trade">Trade.com</span></h2></a>
+  
+  </div>
+<div class="col-md-3">
+  <ul class="list-unstyled">
+    <li class="fw-bold my-2">Partnership</li>
+    <li><a href="{% url 'aboutus' %}" class="text-decoration-none text-white">About</a></li>
+    <li><a href="#" class="text-decoration-none text-white">Terms & Conditions</a></li>
+    
+  </ul>
+</div>
+<div class="col-md-3">
+  <ul class="list-unstyled">
+    <h5>Programs</h5>
+    <li><a class="dropdown-item" href="{% url 'aboutus' %}">Accelerated</a></li>
+                <li><a class="dropdown-item" href="{% url 'aboutus' %}">Rapid</a></li>
+                <li><a class="dropdown-item" href="{% url 'aboutus' %}">Evaluation</a></li>
+
+  </ul>
+</div>
+
+<div class="col-md-3">
+  <li class="fw-bold my-3 list-unstyled ">Contact us:</li>
+  <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+
+<li><a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fa fa-facebook me-2 fa-2x"></i></a></li>
+<li><a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fa fa-instagram me-2 fa-2x"></i></a></li>
+<li><a href="https://www.whatsapp.com/" target="_blank" class="text-white"><i class="fa fa-whatsapp me-2 fa-2x"></i></a></li>
+<li><a href="https://www.linkedin.com/feed/" target="_blank" class="text-white"><i class="fa fa-linkedin me-2 fa-2x"></i></a></li>
+<li><a href="https://www.youtube.com/" target="_blank" class="text-white"><i class="fa fa-youtube me-2 fa-2x"></i></a></li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+<div class="col-md-12 text-center pt-2">
+  <p>&copy;2022 Copyright <a href="{% url 'aboutus' %}" class="text-decoration-none text-white">GESTRADE</a>. All rights reserved.</p>
+</div>
+
+</div>
+
+    
+      <script src="{% static 'JS/bootstrap.bundle.min.js' %}"></script>
+    </body>
+</html> 
+
+{% endcomment %}
+
+{% endblock %}

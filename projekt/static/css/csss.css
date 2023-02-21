@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,%20300,%20400,%20500,%20600,%20700,%20800,%20900&display=swap);
+
+
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+  }*/
+
+  
+body{
+    /*background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%);*/
+    background-color: lightgray;
+}
+.navbar{
+    background-color: #2A2935
+  }
+  .navbar-dark{
+    background: linear-gradient(to right,  #1C426F ,#1C426F, #1C426F)
+  }
+  .nav-item{
+    text-align: center;
+    margin: 10px;
+  }
+.navbar-brand{
+    font-weight: bold;
+}
+
+.contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: #ffff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 15);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/*form*/
+
+.formbox{
+    position: relative;
+    width: 100%;
+}
+.formbox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formbox .row100 .inputbox{
+    width: 100%;
+}
+.inputbox span{
+    color: #398dcd;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputbox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputbox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputbox input[type="submit"]{
+    background: #03a9f5;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputbox ::placeholder{
+    color: rgb(171, 171, 169);
+}
+
+
+/*info*/
+.info{
+    background: cadetblue;
+}
+.info h3{
+    color: white;
+}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infobox div span{
+    max-width: 40px;
+    height: 40px;
+    color: rgb(179, 192, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.info .infobox div p{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infobox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.map{
+    padding: 0;
+    
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    background-color: darkblue
+  }
+.navbar-dark{
+    background-color: darkblue
+  }
+.trade{
+    color: rgb(34, 141, 228);
+   font-weight: bold;
+  }
+
+
+/*footer*/
+
+p {
+    text-align: center;
+}
+.h3, h3 {
+    
+    text-align: center;
+}
+/*Alert*/
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    }
+    .message .success{
+    
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+    
+    }
+    .message .failed{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+#button{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #03a9f5;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* responsiviteti*/
+
+@media screen and (max-width:991px){
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'form' 'info' 'map';
+    }
+}

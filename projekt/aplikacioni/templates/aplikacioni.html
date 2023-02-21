@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/webpage.css' %}"> {% endblock %}
+{% comment %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GesTrade</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/webpage.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="https://fonts.google.com/">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  {% endcomment %}
+
+  {% block content %}
+ <!--Navbar-->
+  <nav class="navbar navbar-dark   fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="logo" href="#">Ges<span class="trade">Trade.com</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'aplikacioni' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'aboutus' %}">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Programs
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="{% url 'aboutus' %}">Accelerated</a></li>
+                <li><a class="dropdown-item" href="{% url 'aboutus' %}">Rapid</a></li>
+                <li><a class="dropdown-item" href="{% url 'aboutus' %}">Evaluation</a></li>
+                <li>
+              
+                </li>
+                
+              </ul>
+            </li>
+          </ul><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!--Bacground image-->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content "> <!--text-center-->
+      <h5 class="headonimg text-white"><span class="crypto">Our Capital <br> </span>Your Expertise</h5>
+      <p class="contentonimg text-white"> The Market Awaits You.</p>
+    <a href="{% url 'aboutus' %}"  target="_blank"><button class="btn learn btn-block btn-outline-light">Learn more</button></a>
+    </div>
+    </div>
+<br>
+
+    <div class="trade">
+      <h1 id="trade">What is your experience level?</h1>
+    <p id="trade">Your success is our business. We provide forex traders with multiple product options to choose from based on your experience. If you lose, we lose, so choose carefully the program that fits your FOREX and Prop Firm trading experience. We will do the rest when it comes to support and trading conditions to ensure your success when trading FOREX with a Prop Firm</p>
+    </div>
+
+
+    <!--Program Cards-->
+    <div class="container-fluid" id="container-fluid">
+      {% for trade in trade %}
+        <div class="card">
+          <img src="{{trade.trade_image.url}}" alt="">
+          <div class="intro">
+              <h1 id="h1">{{trade.trade_name}}</h1>
+          <p id="p">{{trade.trade_description}}</p>
+  
+          </div>
+      </div>
+      {% endfor %}
+      <!-- <div class="card">
+          <img src="{% static 'images/trading.jpg' %}" alt="">
+          <div class="intro">
+              <h1 id="h1">Evaluation</h1>
+              <p id="p">Our Evaluation program is built for traders to prove their worth.</p>
+      
+          </div>
+      </div>
+      <div class="card">
+          <img src="{% static 'images/trading.jpg' %}" alt="">
+          <div class="intro">
+              <h1 id="h1">Accelerated</h1>
+          <p id="p">Accelerated program is built for our traders to start trading a live account from day one.</p>
+  
+          </div>
+      </div> -->
+  
+  </div>
+   
+    <!--Main content area-->
+    
+    <div class="container-fluid my-5 d-grid  gap-5">
+        <div class="p-5  border">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quos quia amet distinctio totam? Corporis quis ullam enim exercitationem, modi volup
+                tas quasi. Iusto quam distinctio dolores ad quibusdam. Id, iusto.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Card Info-->
+    <div class="cardinfo">
+      <div class="row" id="row">
+        <div class="col-md-3">
+          <img src="{% static 'images/rapid.jpg' %}">
+        </div>
+          <div class="col-md-9">
+            <h1 id="Head">Funded Rapid Account</h1>
+            <br>
+            <h4 id="Head">Our Rapid account allows our traders to earn bonuses from day one while working with our FOREX and CFD’s trading prop firm and the risk management aspects that come with it</h4>
+             <br>
+              <h5 id="Head">Rapid Rules</h5>
+
+             <li id="Head">5% Daily Drawdown
+               </li>
+             <li id="Head">12% Overall Drawdown
+               </li>
+             <li id="Head">Being Consistent
+             </li>
+             <li id="Head">3 Days / Week
+  </li>
+             <li id="Head">No Restrictions
+              </li>
+             <li id="Head">Payout increases!
+               </li>           
+             
+          </div><br>
+      </div>
+      <div class="row" id="row">
+        
+          <div class="col-md-9">
+            <h1 id="Head">Funded Account Evaluation</h1>
+            <br>
+            <h4 id="Head">Our Forex Funded Account Evaluation program is built for FOREX traders to prove their skills. Semi-professional traders in need of capital to move to the next level of their career, have the opportunity to show their talent 
+              and reach their goals in a quick, two phase process and join our FOREX Prop Firm and become a funded trader.</h4>
+              <br>
+              <h5 id="Head">Evaluation Rules</h5>
+
+             <li id="Head">5% Daily Drawdown</li> 
+             
+             
+             <li id="Head">12% Overall Drawdown</li> 
+              
+             <li id="Head">8% profit target phase 1</li> 
+                 
+             <li id="Head">5% profit target phase 2</li>
+             
+             <li id="Head">5 trading day minimum</li>
+               
+             <li id="Head">No trading restrictions </li> 
+                       
+             
+
+          </div>
+          <div class="col-md-3">
+            <img src="{% static 'images/evaluation.jpg' %}">
+          </div>
+      </div>
+      <br>
+      <div class="row" id="row">
+        <div class="col-md-3">
+          <img src="{% static 'images/Accelerated.jpg' %}">
+        </div>
+          <div class="col-md-9">
+            <h1 id="Head">Funded Accelerated Account</h1>
+            <br>
+            <h4 id="Head">The My Forex Funds Accelerated program is built for our traders to start trading a live account from day one. This program is suitable for profitable full-time traders who want to boost their capital immediately.</h4>
+            <br>
+              <h5 id="Head">Accelerated Rules</h5>
+
+             <li id="Head">5% or 10% Overall drawdown
+              </li >
+             <li id="Head">Up to 1:100 Leverage
+              </li>
+             <li id="Head">Scaling at every 20%*
+              </li>
+             <li id="Head">$2 Million USD Cap
+              </li>
+             <li id="Head">No Shares Allowed
+              </li>
+             <li id="Head">Weekly Payouts
+               </li>           
+             
+          </div>
+      </div>
+    </div>
+    <br><br><br><br>
+
+
+
+
+
+
+<!--Subscribe-->
+<div class="container">
+  <h1 id="subscribe">Subscribe to get the latest updates</h1>
+  <div class="email">
+      <input type="email" placeholder="Email">
+      <i class="icon fa fa-envelope"></i>
+      <button class="submit">Subscribe</button>
+  </div>
+</div>
+
+
+{% comment %}
+<!--Footer-->
+
+<div class="container-fluid text-white p-3" style="font-family: 'Poppins', sans-serif;background: black;
+background: linear-gradient(to right, #1C426F ,#1C426F, #1C426F);">
+<div class="mt-3">
+  <h3 class="footer-head ">Want to partner with us?</h3>
+  <p class="footer-head">Our Prop Firm has multiple programs to start your journey as a Forex Funded Trader. Choose one of our funding programs and start trading, earn bonuses and profit-splits.</p>
+<center><a href="https://www.youtube.com/watch?v=pV00d5SzBwc"><button  class="btn btn-block btn-outline-light"> Get Started</button></button></a>
+ </center>
+<hr>
+
+    </div>
+<div class="row justify-content-around">
+
+  <div class="col-md-3 col-sm-6"><br> <br>
+    <a class="navbar-brand text-white" id="logo" href="{% url 'aplikacioni' %}">Ges<span class="trade">Trade.com</span></a>
+    
+  
+  </div>
+<div class="col-md-3">
+  <ul class="list-unstyled">
+    <li class="fw-bold my-2">Partnership</li>
+    <li><a href="{% url 'aboutus' %}" class="text-decoration-none text-white" target=”_blank”>About</a></li>
+   
+    <li><a href="{% url 'aboutus' %}" class="text-decoration-none text-white" target=”_blank”>Privacy Policy</a></li>
+    
+  </ul>
+</div>
+<div class="col-md-3">
+  <ul class="list-unstyled">
+    <h5>Programs</h5>
+    <li><a href="{% url 'aboutus' %}" target=”_blank” class="text-decoration-none text-white">Begginer</a></li>
+    <li><a href="{% url 'aboutus' %}" target=”_blank” class="text-decoration-none text-white">Intermediate</a></li>
+    <li><a href="{% url 'aboutus' %}" target=”_blank” class="text-decoration-none text-white">Advanced</a></li>
+
+  </ul>
+</div>
+
+<div class="col-md-3">
+  <li class="fw-bold my-3 list-unstyled ">Contact us:</li>
+  <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+
+<li><a href="https://www.facebook.com/" target="_blank" class="text-white"><i class="fa fa-facebook me-2 fa-2x"></i></a></li>
+<li><a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fa fa-instagram me-2 fa-2x"></i></a></li>
+<li><a href="https://www.whatsapp.com/" target="_blank" class="text-white"><i class="fa fa-whatsapp me-2 fa-2x"></i></a></li>
+<li><a href="https://www.linkedin.com/feed/" target="_blank" class="text-white"><i class="fa fa-linkedin me-2 fa-2x"></i></a></li>
+<li><a href="https://www.youtube.com/" target="_blank" class="text-white"><i class="fa fa-youtube me-2 fa-2x"></i></a></li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+<div class="col-md-12 text-center pt-2">
+  <p>&copy;2022 Copyright <a href="{% url 'aboutus' %}" class="text-decoration-none text-white">GESTRADE</a>. All rights reserved.</p>
+</div>
+
+</div>
+
+{% endcomment %}
+{% comment %}
+
+      <script src="{% static 'JS/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'JS/webpage.js' %}"></script>
+    
+</body>
+</html>
+
+{% endcomment %}
+
+{% endblock %}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    background: lightgray;
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+.footer-head {
+	text-align: center;
+	
+}
+
+
+ 
+.banner-image{
+    background-image:url('../images/7059887.jpg') ;
+    background-size: cover;
+    object-fit: cover;
+    width: 75%;
+    padding: 0%;
+    margin: 0px;
+}
+
+
+.contentonimg{
+    text-align: center;
+    font-size: 15px;
+    margin: 30px;
+
+}
+.headonimg{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.learn{
+    margin: 0;
+    position: absolute;
+    left: 46%;
+    transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+.crypto{
+    color: orange;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 300px;
+}
+.nav-item{
+    text-align: center;
+    margin: 10px;
+}
+
+
+.contactus{
+    margin: 0;
+    padding: 0;
+    box-sizing: 'Poppins' , sans-serif;
+    background: linear-gradient(#0e3959 0%,
+    #0e3959 30%,
+    #03a9f5 30%,
+    #03a9f5 100%);
+}
+
+
+.navbar-brand .trade{
+    color: rgb(34, 141, 228);
+    margin: 0px;
+    font-weight: bold;
+}
+/*emri para Cards*/
+
+.trade{
+    text-align: center;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/*Cards*/
+
+#container-fluid{
+    display: flex;
+    justify-content: center;
+}
+img{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black; 
+    overflow: hidden;
+
+    
+}
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 000px;
+    background: rgb( 27, 27, 27 );
+    color: white;
+    transition: .7s;
+    
+}
+#h1{
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+#p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 250px;
+    bottom: 0px
+    
+}
+.card:hover #p{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-1deg);
+}
+
+/*Subscribe*/
+
+.container{
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.container .email{
+    height: 50px;
+    position: relative;
+}
+
+.container .email input{
+    height: 100%;
+    width: 450px;
+    padding-left: 50px;
+    font-size: 18px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    border: 1px solid coral;
+}
+
+.container .email .icon{
+    position: relative;
+    left: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.container .email button{
+    position: relative;
+    top: 50%;
+    right: -30px;
+    transform: translate(-50%, -50%);
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid gray;
+    outline: none;
+    background: #286aeb;
+    color: white;
+    transition: 0.3s;
+}
+
+.container .email button:hover{
+    background: #1b3d94;
+}
+
+
+
+/*infocard*/
+#Head{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px;
+}
+#row{
+margin: 10px;
+padding: 10px;
+}
+#subscribe{
+    font-weight: 550;
+}
+/*footer*/
+.text-white #logo{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

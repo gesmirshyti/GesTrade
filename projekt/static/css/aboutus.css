@@ -1,0 +1,51 @@
+body{
+  background: lightgray;
+}
+.navbar{
+  background-color: #2A2935
+}
+.navbar-dark{
+  background: linear-gradient(to right,  #1C426F ,#1C426F, #1C426F)
+}
+span{
+  color: rgb(34, 141, 228);
+  font-weight: bold;
+  
+}
+.navbar-brand {
+  color: rgb(34, 141, 228);
+  
+  font-weight: bold;
+}
+.nav-item{
+  text-align: center;
+  margin: 10px;
+}
+.trade{
+  color: rgb(34, 141, 228);
+  text-decoration: none;
+}
+#row{
+  display: flex;
+  margin: 10px;
+ 
+}
+img{
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+  image-rendering: auto;
+}
+#Head{
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+.footer-head {
+	text-align: center;
+	
+}
+#logo{
+  text-decoration: none;
+  color: white;
+}
